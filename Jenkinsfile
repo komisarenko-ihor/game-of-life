@@ -8,10 +8,7 @@ pipeline {
                         steps {
                                 echo 'building the application ...'
                                 echo 'some changes ...'
-                                withMaven() {
-                                        sh 'mvn -v'
-                                }
-                                
+                                sh 'mvn -v'
                         }
                 }
                 stage("test") {
