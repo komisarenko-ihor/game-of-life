@@ -5,8 +5,8 @@ pipeline {
                         steps {
                                 echo 'building the application ...'
                                 echo 'some changes ...'
-                                withGradle() {
-                                        sh './gradlew -v'
+                                withMaven {
+                                        sh 'mvn --version'
                                 }
                         }
                 }
