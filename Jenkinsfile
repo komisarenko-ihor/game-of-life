@@ -6,7 +6,7 @@ pipeline {
                                 echo 'building the application ...'
                                 echo 'some changes ...'
                                 withGradle() {
-                                        bash './gradlew -v'
+                                        sh './gradlew -v'
                                 }
                         }
                 }
