@@ -6,7 +6,7 @@ pipeline {
                                 echo 'building the application ...'
                                 echo 'some changes ...'
                                 withMaven() {
-                                        sh 'mvn -v'
+                                        bat 'mvn -v'
                                 }
                         }
                 }
