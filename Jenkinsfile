@@ -5,7 +5,7 @@ pipeline {
                         steps {
                                 echo 'building the application ...'
                                 echo 'some changes ...'
-                                withMaven {
+                                withMaven() {
                                         sh 'mvn --version'
                                 }
                         }
